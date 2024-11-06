@@ -8,6 +8,10 @@
     <GHPages>false</GHPages>
   </PropertyGroup>
 
+  <Target Name="StaticWebAssets" AfterTargets="Publish">
+    <Exec Command="dotnet msbuild /t:GenerateStaticWebAssets /p:Configuration=$(Configuration)" />  
+  </Target>
+
   <ItemGroup>
     <Content Include="bin\Debug\net8.0\appsettings.Development.json" />
     <Content Include="bin\Debug\net8.0\appsettings.json" />
