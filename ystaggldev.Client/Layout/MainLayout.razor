@@ -9,18 +9,27 @@
         <MudNavLink Href="/" Match="NavLinkMatch.All">
         <div class="d-flex flex-grow-1 align-center">
         
-                <MudText Align="Align.Right" Typo="Typo.h5" Class="d-flex justify-end ml-3">ystaggl</MudText>
-                <MudText Align="Align.Left" Typo="Typo.h5" Class="d-flex justify-start mud-secondary-text">.dev</MudText>
+                <MudText Typo="Typo.h5" Class="d-flex justify-end ml-5">ystaggl<span class="mud-secondary-text">.dev</span></MudText>
         
         </div>
         </MudNavLink>
-        <MudNavLink Href="programming" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Code">Programming</MudNavLink>
-        <MudNavLink Href="music" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.MusicNote">Music</MudNavLink>
-        <MudNavLink Href="about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.AccountCircle">About</MudNavLink>
+        <MudContainer Class="justify-end mr-5" Style="position:sticky; right:0%">
+        <MudGrid Class="justify-end" Spacing="20">
+            <MudItem>
+                <MudNavLink Class="ml-20" Href="programming" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Code">Programming</MudNavLink>
+            </MudItem>
+            <MudItem>
+                <MudNavLink Href="music" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.MusicNote">Music</MudNavLink>
+            </MudItem>
+            <MudItem>
+                <MudNavLink Href="about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.AccountCircle">About</MudNavLink>
+            </MudItem>
+        </MudGrid>
+        </MudContainer>
 
 
 
-        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" Edge="Edge.End" OnClick="@DarkModeToggle" />
+        <!--<MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" Edge="Edge.End" OnClick="@DarkModeToggle" />-->
     </MudAppBar>
     <MudMainContent Class="mt-16 pa-4">
         @Body
