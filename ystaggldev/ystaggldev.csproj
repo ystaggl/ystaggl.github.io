@@ -5,6 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GHPages>false</GHPages>
   </PropertyGroup>
 
   <ItemGroup>
@@ -287,6 +288,7 @@
 
 
   <ItemGroup>
+    <PackageReference Include="PublishSPAforGitHubPages.Build" Version="3.0.0" />
     <ProjectReference Include="..\ystaggldev.Client\ystaggldev.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.*" />
   </ItemGroup>

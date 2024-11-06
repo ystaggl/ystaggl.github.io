@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ystaggldev.Client",
   "resources": {
-    "hash": "sha256-aNc/p/laoZTuKlAYSjqaAeDYjPWXcWQwvR+J7k2Q5xM=",
+    "hash": "sha256-Ey1NaNWckPY433hqvcuFvf7SwHiSmny1GXGLMqny8gA=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.o8euhdnwl3.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -54,7 +54,7 @@
       "System.Text.Encodings.Web.wasm": "sha256-hvL1Sp38Sb9Pf0P2X3TSMaVAgkSIFhOOfYTuLaUbkvs=",
       "System.Text.Json.wasm": "sha256-asF6aNeyfsArvClTV7kpUmuarXQJc/vdyPxKyQMwgu0=",
       "System.Text.RegularExpressions.wasm": "sha256-6HtgAFyDgUh0rSt/T6nn7m0yLWm19iA7yMfzx3WaTFg=",
-      "ystaggldev.Client.wasm": "sha256-4Lp9hK4QfKMjpdEQ7W6+YECRdw40lVdtowWI7SZvKYI="
+      "ystaggldev.Client.wasm": "sha256-t17ao71WC/th21cqvBkQj+7ntEafIQcniKpMuPwqb8U="
     }
   },
   "cacheBootResources": true,
