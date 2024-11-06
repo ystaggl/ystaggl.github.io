@@ -16,7 +16,6 @@
 
 
   <ItemGroup>
-    <PackageReference Include="PublishSPAforGitHubPages.Build" Version="3.0.0" />
     <ProjectReference Include="..\ystaggldev.Client\ystaggldev.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.*" />
   </ItemGroup>
