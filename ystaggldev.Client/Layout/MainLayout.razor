@@ -6,7 +6,7 @@
 <MudSnackbarProvider />
 <MudLayout>
     <MudAppBar Elevation="1">
-        <MudNavLink Href="" Match="NavLinkMatch.All">
+        <MudNavLink Href="/" Match="NavLinkMatch.All">
         <div class="d-flex flex-grow-1 align-center">
         
                 <MudText Align="Align.Right" Typo="Typo.h5" Class="d-flex justify-end ml-3">ystaggl</MudText>
@@ -14,12 +14,13 @@
         
         </div>
         </MudNavLink>
-        <MudNavLink Href="weather" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Weather</MudNavLink>
+        <MudNavLink Href="programming" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Code">Programming</MudNavLink>
+        <MudNavLink Href="music" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.MusicNote">Music</MudNavLink>
+        <MudNavLink Href="about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.AccountCircle">About</MudNavLink>
 
 
 
-        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" Edge="Edge.End" OnClick="@DarkModeToggle" />
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
@@ -29,6 +30,7 @@
     </MudMainContent>
 </MudLayout>
 
+<Footer />
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
